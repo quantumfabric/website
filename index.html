@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quantum Fabric | HOBO × 量子計算 × TYTANで製造最適化ループをつくる</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Quantum Fabricは、センシングデータをHOBO（Higher Order Binary Optimization）で定式化し、量子計算やTYTANで解いてロボット・設備にフィードバックする、製造最適化ループ構築のパートナーです。"
+  />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-50">
+  <!-- 背景グラデーション -->
+  <div class="fixed inset-0 -z-10 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
+  <div class="fixed inset-0 -z-10 opacity-40 bg-[radial-gradient(circle_at_top,_#22d3ee_0,_transparent_55%),radial-gradient(circle_at_bottom,_#4f46e5_0,_transparent_55%)]"></div>
+
+  <!-- 全体ラッパー -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="border-b border-white/5 backdrop-blur bg-slate-950/60">
+      <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="h-7 w-7 rounded-lg bg-cyan-400/20 border border-cyan-300/40 flex items-center justify-center text-xs font-semibold tracking-tight">
+            QF
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm sm:text-base font-semibold tracking-tight">
+              Quantum Fabric
+            </div>
+            <div class="text-[11px] sm:text-xs text-slate-400">
+              HOBO × Quantum × Robot for Manufacturing
+            </div>
+          </div>
+        </div>
+        <nav class="hidden sm:flex items-center gap-6 text-xs text-slate-300">
+          <a href="#about" class="hover:text-cyan-300 transition">コンセプト</a>
+          <a href="#loop" class="hover:text-cyan-300 transition">ループ構成</a>
+          <a href="#services" class="hover:text-cyan-300 transition">支援内容</a>
+          <a href="#contact" class="hover:text-cyan-300 transition">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1">
+      <!-- Hero -->
+      <section class="border-b border-white/5">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
+          <div class="grid gap-10 lg:grid-cols-[1.3fr,1fr] items-center">
+            <!-- テキスト -->
+            <div>
+              <p class="inline-flex items-center rounded-full border border-cyan-400/40 bg-cyan-400/10 px-3 py-1 text-[11px] font-medium tracking-wide text-cyan-200 mb-4">
+                製造最適化 × 量子計算 × HOBO × TYTAN × ロボット
+              </p>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight mb-4">
+                センシングからロボットまで、<br class="hidden sm:block" />
+                製造ラインを<span class="text-cyan-300">一つのHOBOファブリック</span>に。
+              </h1>
+              <p class="text-sm sm:text-base text-slate-200/90 leading-relaxed mb-6">
+                Quantum Fabric は、現場からのセンシングデータを
+                HOBO（Higher Order Binary Optimization）で定式化し、
+                量子計算および TYTAN による高速な最適化を経て、
+                ロボット・設備へのフィードバックまでつなぐ
+                製造最適化ループ構築のパートナーです。
+              </p>
+
+              <ul class="text-xs sm:text-sm text-slate-200/80 space-y-1.5 mb-7">
+                <li class="flex items-start gap-2">
+                  <span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-cyan-300"></span>
+                  センシングデータ・履歴データを HOBO で高次ビット最適化問題として定式化
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-cyan-300"></span>
+                  TYTAN や量子インスパイアド手法で、生産計画・配列・条件パラメータを探索
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-0.5 h-1.5 w-1.5 rounded-full bg-cyan-300"></span>
+                  ロボット・PLC・既存システムへフィードバックし、現場に自動反映
+                </li>
+              </ul>
+
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <a
+                  href="mailto:info@quantum-fabric.com?subject=%E3%80%90HOBO%E3%83%BB%E9%87%8F%E5%AD%90%E8%A8%88%E7%AE%97%E3%81%AB%E3%82%88%E3%82%8B%E8%A3%BD%E9%80%A0%E6%9C%80%E9%81%A9%E5%8C%96%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87%E3%80%91Quantum%20Fabric%E3%81%B8"
+                  class="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/30 hover:bg-cyan-300 transition"
+                >
+                  メールで相談する
+                </a>
+                <div class="text-[11px] sm:text-xs text-slate-300">
+                  info@quantum-fabric.com まで<br class="sm:hidden" />お気軽にご連絡ください。
+                </div>
+              </div>
+            </div>
+
+            <!-- カード風ビジュアル：センシング→HOBO→計算→フィードバック -->
+            <div class="lg:pl-6">
+              <div class="rounded-2xl border border-white/10 bg-slate-900/70 shadow-xl shadow-slate-900/80 p-5 sm:p-6">
+                <div class="text-xs font-medium text-slate-300 mb-3 flex items-center justify-between">
+                  <span>Closed-Loop Manufacturing</span>
+                  <span class="text-[11px] text-cyan-200/80">Sense → HOBO → Compute → Act</span>
+                </div>
+
+                <div class="space-y-4 text-[11px] text-slate-100">
+                  <!-- STEP 1 -->
+                  <div class="border border-white/5 rounded-xl p-3 bg-slate-900/80 mb-1.5">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="font-semibold text-cyan-200">STEP 1 : Sensing</span>
+                      <span class="text-slate-400">ライン稼働中</span>
+                    </div>
+                    <p class="text-slate-100 mb-1">
+                      温度・振動・スループット・品質指標などを、
+                      既存センサーやPLCログから収集し、時系列で蓄積。
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] text-slate-300">
+                      <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                      ライン：3 ／ 監視ポイント：48
+                    </div>
+                  </div>
+
+                  <!-- STEP 2 -->
+                  <div class="border border-white/5 rounded-xl p-3 bg-slate-900/80 mb-1.5">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="font-semibold text-cyan-200">STEP 2 : HOBO Modeling</span>
+                      <span class="text-slate-400">高次ビット最適化定式化</span>
+                    </div>
+                    <p class="text-slate-100 mb-1">
+                      制約・コスト・リスクを HOBO（Higher Order Binary Optimization）
+                      として表現し、現場の制約を壊さない形で QUBO / Ising に落とし込みます。
+                    </p>
+                    <div class="flex justify-between text-[10px] text-slate-300">
+                      <span>変数数：8,192</span>
+                      <span>高次項：1,240</span>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3 -->
+                  <div class="border border-white/5 rounded-xl p-3 bg-slate-900/80 mb-1.5">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="font-semibold text-cyan-200">STEP 3 : TYTAN / Quantum Compute</span>
+                      <span class="text-slate-400">最適化ジョブ実行中</span>
+                    </div>
+                    <p class="text-slate-100 mb-1">
+                      TYTAN や量子インスパイアド最適化・量子計算機を用いて、
+                      生産スケジュールやロボット条件の候補解を高速探索。
+                    </p>
+                    <div class="flex justify-between text-[10px] text-slate-300">
+                      <span>探索パターン：12,480</span>
+                      <span class="text-cyan-200">コスト -18.3%</span>
+                    </div>
+                  </div>
+
+                  <!-- STEP 4 -->
+                  <div class="border border-white/5 rounded-xl p-3 bg-slate-900/80">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="font-semibold text-cyan-200">STEP 4 : Robot / PLC Feedback</span>
+                      <span class="text-slate-400">更新サイクル：5 min</span>
+                    </div>
+                    <p class="text-slate-100 mb-1">
+                      解をロボット・PLCのコマンドに変換し、条件変更を自動反映。
+                      フィードバック結果は再びセンシングに戻り、ループとして閉じます。
+                    </p>
+                    <div class="flex justify-between text-[10px] text-slate-300">
+                      <span>軌道変更：+22 ケース/日</span>
+                      <span class="text-emerald-300">停止時間 ▲12%</span>
+                    </div>
+                  </div>
+
+                  <div class="border border-dashed border-cyan-400/50 rounded-xl p-3 bg-cyan-400/5 text-[11px] text-slate-100">
+                    「自社の課題を HOBO でどう定式化できるか？」
+                    「TYTANと組み合わせると何が変わるか？」といった
+                    初期検討フェーズからご一緒できます。まずは
+                    <span class="font-semibold text-cyan-200">info@quantum-fabric.com</span>
+                    までご連絡ください。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- grid -->
+        </div>
+      </section>
+
+      <!-- Concept / About -->
+      <section id="about" class="border-b border-white/5">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-10 sm:py-14">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight mb-3">
+            コンセプト：HOBOで現場を記述し、量子計算で解き、ロボットで動かす
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200/90 leading-relaxed mb-4">
+            Quantum Fabric は、製造現場の複雑な制約・ルール・ノウハウを
+            HOBO（Higher Order Binary Optimization）として記述し、
+            量子計算と TYTAN を組み合わせて解き、ロボットや設備に反映する
+            「製造最適化ループ」を設計・実装するチームです。
+          </p>
+          <p class="text-sm sm:text-base text-slate-200/80 leading-relaxed mb-3">
+            センシングや既存システムから得られるデータを元に、
+            生産スケジュール、段取り替え、ロボット軌道、保全タイミングなどを
+            高次ビット最適化問題として表現することで、
+            現実の制約を壊さないまま高度な探索を可能にします。
+          </p>
+          <p class="text-sm sm:text-base text-slate-200/80 leading-relaxed">
+            派手なデモよりも、現場が「これなら使える」と思えるスケールから始め、
+            ループを少しずつ育てていくことを重視しています。
+          </p>
+        </div>
+      </section>
+
+      <!-- Loop Structure -->
+      <section id="loop" class="border-b border-white/5">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-10 sm:py-14">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight mb-6">
+            Sensing – HOBO – Compute – Feedback のループ構成
+          </h2>
+
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-4 sm:p-6">
+            <!-- 横並びのステップ図っぽいUI -->
+            <div class="flex flex-col sm:flex-row items-stretch gap-4 sm:gap-3 text-xs sm:text-sm mb-5">
+              <div class="flex-1 border border-white/5 rounded-xl bg-slate-900/80 p-3">
+                <div class="text-[11px] font-semibold text-cyan-200 mb-1">01 Sensing</div>
+                <div class="font-semibold mb-1">現場データを「測る」</div>
+                <p class="text-slate-200/85 leading-relaxed text-[11px] sm:text-xs">
+                  センサー・PLC・MES などから、稼働・品質・環境・負荷のデータを取得し、
+                  HOBO に載せられる形で前処理します。
+                </p>
+              </div>
+              <div class="flex items-center justify-center">
+                <div class="hidden sm:flex h-10 w-10 rounded-full border border-cyan-300/60 bg-cyan-400/10 text-[10px] text-cyan-100 items-center justify-center">
+                  データ<br/>前処理
+                </div>
+              </div>
+              <div class="flex-1 border border-white/5 rounded-xl bg-slate-900/80 p-3">
+                <div class="text-[11px] font-semibold text-cyan-200 mb-1">02 HOBO Modeling</div>
+                <div class="font-semibold mb-1">制約・目的を「書き下す」</div>
+                <p class="text-slate-200/85 leading-relaxed text-[11px] sm:text-xs">
+                  ラインの制約・人員・設備能力・品質リスクを、
+                  高次ビット最適化（HOBO）として形式化。現場ルールを数式として表現します。
+                </p>
+              </div>
+              <div class="flex items-center justify-center">
+                <div class="hidden sm:flex h-10 w-10 rounded-full border border-cyan-300/60 bg-cyan-400/10 text-[10px] text-cyan-100 items-center justify-center">
+                  QUBO<br/>変換
+                </div>
+              </div>
+              <div class="flex-1 border border-white/5 rounded-xl bg-slate-900/80 p-3">
+                <div class="text-[11px] font-semibold text-cyan-200 mb-1">03 Compute</div>
+                <div class="font-semibold mb-1">TYTAN / 量子計算で「解く」</div>
+                <p class="text-slate-200/85 leading-relaxed text-[11px] sm:text-xs">
+                  TYTAN や量子インスパイアド手法、量子コンピュータを用いて、
+                  複数の候補解を高速に探索・評価します。
+                </p>
+              </div>
+              <div class="flex items-center justify-center">
+                <div class="hidden sm:flex h-10 w-10 rounded-full border border-cyan-300/60 bg-cyan-400/10 text-[10px] text-cyan-100 items-center justify-center">
+                  コマンド<br/>生成
+                </div>
+              </div>
+              <div class="flex-1 border border-white/5 rounded-xl bg-slate-900/80 p-3">
+                <div class="text-[11px] font-semibold text-cyan-200 mb-1">04 Feedback</div>
+                <div class="font-semibold mb-1">ロボット・設備に「反映」</div>
+                <p class="text-slate-200/85 leading-relaxed text-[11px] sm:text-xs">
+                  選択された解をロボット・PLC・既存システムの指令値に変換し、
+                  サイクルタイムを崩さない範囲で条件を自動調整します。
+                </p>
+              </div>
+            </div>
+
+            <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+              既に稼働しているライン・ロボット・データ基盤を前提に、
+              「どの部分を HOBO と TYTAN で置き換えると効果が出るか」を一緒に設計します。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="border-b border-white/5">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-10 sm:py-14">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight mb-6">
+            支援内容
+          </h2>
+          <div class="grid gap-5 sm:grid-cols-3">
+            <div class="border border-white/5 rounded-xl bg-slate-900/70 p-4 flex flex-col">
+              <h3 class="text-sm font-semibold mb-2">HOBOによるモデリング支援</h3>
+              <p class="text-xs text-slate-200/90 flex-1 leading-relaxed mb-3">
+                現場ルール・制約・KPI をヒアリングし、
+                HOBO（高次ビット最適化）として定式化するところから伴走します。
+                QUBO / Ising への変換も含めて支援します。
+              </p>
+              <p class="text-[11px] text-cyan-200/90">
+                「数式化が難しい」テーマからのご相談歓迎
+              </p>
+            </div>
+            <div class="border border-white/5 rounded-xl bg-slate-900/70 p-4 flex flex-col">
+              <h3 class="text-sm font-semibold mb-2">TYTAN / 量子計算PoC</h3>
+              <p class="text-xs text-slate-200/90 flex-1 leading-relaxed mb-3">
+                TYTAN や量子コンピュータを用いた最適化 PoC を設計・実装。
+                従来ソルバーとの比較や、実運用を見据えたパラメータチューニングを行います。
+              </p>
+              <p class="text-[11px] text-cyan-200/90">
+                生産・配列・保全・物流など幅広いテーマに対応
+              </p>
+            </div>
+            <div class="border border-white/5 rounded-xl bg-slate-900/70 p-4 flex flex-col">
+              <h3 class="text-sm font-semibold mb-2">ロボット・設備への実装</h3>
+              <p class="text-xs text-slate-200/90 flex-1 leading-relaxed mb-3">
+                ロボット、PLC、MES／生産管理システムとの連携を設計し、
+                計算結果を現場のコマンドとして配信するミドルウェア層を構築します。
+              </p>
+              <p class="text-[11px] text-cyan-200/90">
+                小さな自動調整から段階的に自律化を拡大
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="border-b border-white/5">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-10 sm:py-14">
+          <div class="border border-cyan-400/50 rounded-2xl bg-cyan-400/5 px-5 py-7 sm:px-7 sm:py-8">
+            <h2 class="text-lg sm:text-xl font-semibold tracking-tight mb-3">
+              HOBO × 量子計算 × TYTAN × ロボット活用のご相談
+            </h2>
+            <p class="text-sm sm:text-base text-slate-100 leading-relaxed mb-4">
+              「自社の課題は HOBO で書けるのか？」「TYTAN をどこに挟むべきか？」
+              「既存ロボットとどうつなぐか？」といった段階からで問題ありません。
+              アイデア検討レベルからご一緒します。
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+              <div class="text-sm sm:text-base font-mono text-cyan-100 break-all">
+                info@quantum-fabric.com
+              </div>
+            </div>
+
+            <p class="mt-4 text-[11px] sm:text-xs text-slate-200/80">
+              ※ 現場レイアウトや使用中の設備・ロボット・システム名など、
+              共有可能な範囲で情報をお送りいただけると、より具体的なディスカッションが可能です。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 border-t border-white/5 text-[11px] sm:text-xs text-slate-400">
+      <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div>© <span id="year-span"></span> Quantum Fabric. All rights reserved.</div>
+        <div class="text-slate-500">
+          info@quantum-fabric.com
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 年号を自動更新 -->
+  <script>
+    document.getElementById("year-span").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
